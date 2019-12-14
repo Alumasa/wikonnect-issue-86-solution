@@ -1,0 +1,24 @@
+{{outlet}}
+{{!-- {{outlet}} --}}
+<div id="courses">
+  <div class="heading">
+    <h2>{{model.name}}</h2>
+
+    <p> {{model.description}}</p>
+  </div>
+
+
+  <div class="padded modules">
+    <h2>Lessons</h2>
+    <hr>
+
+
+    {{#each model.lessons as |lesson|}}
+
+      <LessonItem @lesson={{lesson}} />
+    {{/each}}
+
+
+  </div>
+
+</div>

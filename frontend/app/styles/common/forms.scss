@@ -1,0 +1,84 @@
+@import "variables";
+
+
+
+
+.inputs {
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: $primary-purple;
+    padding-left: 0px;
+    border-radius: 0px;
+  }
+
+  input:focus {
+    border-color: green
+  }
+}
+
+
+.invalid-feedback {
+  font-size: 0.2rem;
+  color: red;
+}
+
+label {
+  color: grey;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+.form {
+
+  padding: 2rem;
+
+}
+
+.form-title {
+  font-size: 30px;
+
+  color: white;
+
+  background-color: $primary-purple;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 1.6em;
+  padding-left: 0.5em;
+}
+
+
+.submit {
+  color: red;
+  padding-top: 1em;
+  width: 100%;
+}
+
+
+.form-text {
+  color: #afafaf;
+  font-size: 0.9rem;
+}
+
+slightly narrower for forms .form-container {
+  @media (min-width: 1200px) {
+    max-width: 7240px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 720px;
+  }
+
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.form-primary-fields {
+  margin-bottom: 2rem;
+
+}
